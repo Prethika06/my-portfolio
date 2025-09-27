@@ -1,0 +1,80 @@
+#hero {
+  background: -webkit-linear-gradient(to right, #12121f, #1c1c2f);
+  color: #e0e6f0;
+  padding: 6rem 2rem;
+  text-align: center;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  scroll-margin-top: 120px;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #00d8ff;
+  margin: 0;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #b0b8c1;
+}
+
+#hero a {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 2rem;
+  background-color: #00d8ff;
+  color: #12121f;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+#hero a:hover,
+#hero a:focus {
+  background-color: #008fb3;
+  outline: none;
+}
+
+
+#hero h1, #hero p, #hero a {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards;
+  }
+  #hero h1 { animation-delay: 0.2s; }
+  #hero p { animation-delay: 0.4s; }
+  #hero a { animation-delay: 0.6s; }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+@media (max-width: 600px) {
+  #hero {
+    padding-top: 0;
+    scroll-margin-top: 140px;
+  }
+  #hero h1 {
+    font-size: 2.2rem;
+  }
+  #hero p {
+    font-size: 1rem;
+  }
+  #hero a {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}

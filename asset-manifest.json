@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.625da372.css",
+    "main.js": "/my-portfolio/static/js/main.a20e346c.js",
+    "static/media/codecraft-ai-blog.png": "/my-portfolio/static/media/codecraft-ai-blog.4d2f90b74bdc2aab83d8.png",
+    "static/media/expense-tracker.png": "/my-portfolio/static/media/expense-tracker.c8a128852ff51738b00c.png",
+    "static/media/frontend-masterclass.png": "/my-portfolio/static/media/frontend-masterclass.2da796360727ee78b12a.png",
+    "static/media/smart-resume-builder.png": "/my-portfolio/static/media/smart-resume-builder.f0a6b6c19da3a139e759.png",
+    "static/media/word-counter.png": "/my-portfolio/static/media/word-counter.fc828109f5307c417f26.png",
+    "static/media/vanilla-js-todo.png": "/my-portfolio/static/media/vanilla-js-todo.15e86b71927563db3b66.png",
+    "index.html": "/my-portfolio/index.html",
+    "main.625da372.css.map": "/my-portfolio/static/css/main.625da372.css.map",
+    "main.a20e346c.js.map": "/my-portfolio/static/js/main.a20e346c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.625da372.css",
+    "static/js/main.a20e346c.js"
+  ]
+}

@@ -1,0 +1,127 @@
+#projects {
+  background-color: #1e1e2f;
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  scroll-margin-top: 40px;
+}
+
+.project-card img.project-image {
+  width: 100%;
+  height: auto; /* or auto if you want proportional */
+  object-fit: cover; /* makes image cover the card area */
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #00d8ff;
+  text-align: center;
+}
+
+.project-card {
+  background-color: #2a2a45;
+  border-radius: 8px;
+  padding: 1.8rem;
+  margin-bottom: 1.8rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 216, 255, 0.6);
+}
+
+.project-title {
+  font-size: 1.8rem;
+  color: #00d8ff;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.project-description {
+  color: #b0b8c1;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.tech-stack {
+  margin-bottom: 1rem;
+}
+
+.tech-stack span {
+  background-color: #00d8ff;
+  color: #1e1e2f;
+  padding: 0.3rem 0.7rem;
+  margin-right: 0.6rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.project-links a {
+  color: #00d8ff;
+  margin-right: 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.project-links a:hover {
+  color: #00a3cc;
+  text-decoration: underline;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+#projects h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #00d8ff;
+  margin: 0.5rem auto 1rem;
+  border-radius: 2px;
+}
+
+#projects {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width:600px) {
+  #projects {
+    padding: 2rem 1rem;
+    scroll-margin-top: 80px;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+  #projects h2 {
+    font-size: 2rem;
+  }
+  #projects p {
+    font-size: 1rem;
+  }
+}
